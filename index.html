@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Webpage</title>
+    <link rel="stylesheet" type="text/css" href="build/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="build/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="build/style/index.css"/>
+    <link rel="stylesheet" href="build/Magnific-Popup-master/dist/magnific-popup.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="build/Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
+</head>
+<body>
+<div class="main">
+    <div class="head">
+        <div class="info">
+            <p style="font-size: 34px; line-height: 1.3em;"><b>Репродукцио</b>
+                <span style="font-size: 12px;line-height: 1.3em;">Оффлайн-магазин репродукций шедевров мирового искусства</span></p>
+            <p><span style="font-size: 12px;line-height: 1.3em;">Санкт-Петербург, ул. Адмирала Черокова, 18</span></p>
+                <p><span style="font-size: 12px;line-height: 1.3em;">+7 812 963-22-01</span>
+                    <span style="cursor: pointer; font-size: 12px;line-height: 1.3em;">shop@reproduct.io</span></p>
+        </div>
+        <div class="autoplay">
+            <div><img src="build/assets/img/secWeek/hristos.jpg" alt="Рождение Венеры"></div>
+            <div><img src="build/assets/img/secWeek/les.png" alt="Киевский вокзал"></div>
+            <div><img src="build/assets/img/secWeek/vitaz.jpg" alt="Воронеж"></div>
+            <div><img src="build/assets/img/secWeek/ytro.jpg" alt="Киевский вокзал"></div>
+            <div><img src="build/assets/img/secWeek/lilii.jpg" alt="Воронеж"></div>
+            <div><img src="build/assets/img/secWeek/buy/zakat.jpg" alt="Солнечный день"></div>
+        </div>
+    </div>
+    <div class="basis">
+        <p class="name-popul">Популярное<br><span class="mini-h1">Нестареющая классика и бестселлеры.</span> </p>
+        <div class="bas-slick">
+            <div><img src="build/assets/img/secWeek/buy/bogat.jpg" alt="Лес"></div>
+            <div><img src="build/assets/img/secWeek/buy/cafe.jpg" alt="Лилии"></div>
+            <div><img src="build/assets/img/secWeek/buy/den.jpg" alt="Мишки в лесу"></div>
+            <div><img src="build/assets/img/secWeek/buy/osenm.jpg" alt="Японский мостик"></div>
+            <div><img src="build/assets/img/secWeek/buy/zakat.jpg" alt="Солнечный день"></div>
+        </div>
+        <div class="footer">
+            <div class="support">
+                <p style="font-size: 28px; line-height: 0.6em;">Написать нам<span style="font-size: 12px;"><br>Заполните форму справа<br>или отправьте письмо на <span style="cursor:pointer;">shop@reproduct.io</span></span></p>
+                <p style="line-height: 2em; font-size: 10px; margin-top: 100px;">Репродукцио, 2019<br>
+                    <a class="js-popup-vertical-fit" href="build/assets/img/secWeek/popup.jpg" style="color:white;">Правила обработки персональных данных</a></p>
+            </div>
+            <div class="forma">
+                <form>
+                    <p id="text1" style="color: rgba(17,198,0,0.8)">Сообщение отправлено.<br><br>Мы ответим вам на почту в течение нескольких рабочих дней.</p>
+                    <table>
+                        <tr><input name="emal" id="email" type="text" placeholder="Эл. почта" size="22" required></tr>
+                        <tr><textarea  id="sms" cols=21 rows=6 placeholder="Сообщение" style="margin-left: 10px; padding: 7px;" required></textarea></tr>
+                        <tr><input  id="send" type="submit" value="Отправить сообщение"  style="margin-left: 45px; width: 150px; background: rgba(97,170,198,0.8); color: white; cursor: pointer;" onclick="persistInput(name)"></tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // Здесь не важно, как мы скрываем текст.
+    // Также можно использовать style.display:
+    document.getElementById('send').onclick = function() {
+        document.getElementById('email').hidden = true;
+        document.getElementById('send').hidden = true;
+        document.getElementById('sms').hidden = true;
+        document.getElementById('text1').hidden = false;
+    }
+</script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="build/slick/slick.min.js"></script>
+<script type="text/javascript" src="build/js/primer.js"></script>
+<script type="text/javascript" src="build/js/index.js"></script>
+</body>
+</html>
